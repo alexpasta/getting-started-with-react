@@ -1,11 +1,9 @@
 import React from 'react';
 
-let Hello = React.createClass({
+export default class Hello extends React.PureComponent {
   render(){
     return (
       <div>Hello World!</div>
     );
   }
-});
-
-export default Hello;
+}

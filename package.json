@@ -32,9 +32,10 @@
   },
   "dependencies": {
     "lodash": "~4.17.2",
-    "react-bootstrap": "^0.30.7",
+    "material-ui": "^0.16.4",
     "react-dom": "^15.4.1",
-    "react-kendo": "~0.13.11"
+    "react-kendo": "~0.13.11",
+    "react-tap-event-plugin": "^2.0.1"
   },
   "babel": {
     "presets": [

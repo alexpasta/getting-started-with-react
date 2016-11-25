@@ -1,10 +1,16 @@
 import React from 'react';
-import Hello from './Hello';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import WeatherInfo from './WeatherInfo';
 
 export default class App extends React.PureComponent {
   render(){
     return (
-      <Hello/>
+      <div>
+        <div>A Material React Weather App Sample</div>
+      	<MuiThemeProvider>
+          <WeatherInfo />
+	    </MuiThemeProvider>
+	  </div>
     );
   }
 }

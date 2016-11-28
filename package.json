@@ -1,7 +1,7 @@
 {
   "name": "react-webpack",
   "version": "1.0.0",
-  "description": "generate webpack react demo",
+  "description": "This is a private project.",
   "main": "js/index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --progress --profile --colors",
@@ -15,8 +15,7 @@
     "react",
     "webpack"
   ],
-  "author": "yixuan",
-  "license": "MIT",
+  "author": "alexpasta",
   "devDependencies": {
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",

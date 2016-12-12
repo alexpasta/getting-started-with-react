@@ -6,7 +6,7 @@ export default class App extends React.PureComponent {
   render(){
     return (
       <div>
-        <div>A Material React Weather App Sample</div>
+        <div>A React Weather App Sample</div>
       	<MuiThemeProvider>
           <WeatherInfo />
 	    </MuiThemeProvider>

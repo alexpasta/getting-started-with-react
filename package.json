@@ -4,7 +4,7 @@
   "description": "This is a private project.",
   "main": "js/index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --progress --profile --colors",
+    "start": "webpack-dev-server --progress --profile --colors",
     "build": "webpack --progress --colors"
   },
   "repository": {

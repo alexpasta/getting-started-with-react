@@ -1,8 +1,9 @@
 import React from 'react';
 import AutoComplete from 'material-ui/AutoComplete';
 import weatherApi from 'apis/weatherApi';
+import WeatherInput from 'components/WeatherInput';
 import WeatherResult from 'components/WeatherResult';
-import { CITIES, DEFAULT_CITY }  from 'constants/Constants';
+import { DEFAULT_CITY }  from 'constants/Constants';
 
 export default class WeatherInfo extends React.PureComponent {
   constructor(props) {
@@ -16,13 +17,9 @@ export default class WeatherInfo extends React.PureComponent {
   render() {
     return (
       <div>
-		    <AutoComplete
-  	      floatingLabelText="Type a city name"
-  	      filter={AutoComplete.fuzzyFilter}
-  	      dataSource={CITIES}
-  	      maxSearchResults={5}
-          onNewRequest={this.getWeather}
-  	    />
+        <WeatherInput
+          getWeather={this.getWeather}
+        />
         <WeatherResult
           city={this.state.city}
           temp={this.state.temp}
@@ -36,6 +33,8 @@ export default class WeatherInfo extends React.PureComponent {
   }
 
   getWeather = city => {
+    if(city == null || city === '') return;
+
     weatherApi.getWeather(city, res => {
       this.setState({
         city: res.name,

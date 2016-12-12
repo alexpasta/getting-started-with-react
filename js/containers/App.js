@@ -1,6 +1,6 @@
 import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import WeatherInfo from './WeatherInfo';
+import WeatherInfo from 'containers/WeatherInfo';
 
 export default class App extends React.PureComponent {
   render(){

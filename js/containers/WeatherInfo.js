@@ -11,11 +11,9 @@ export default class WeatherInfo extends React.PureComponent {
       city: null,
       temp: null
     };
-
-    this.getWeather(DEFAULT_CITY);
   }
 
-  render(){
+  render() {
     return (
       <div>
 		    <AutoComplete
@@ -31,6 +29,10 @@ export default class WeatherInfo extends React.PureComponent {
         />
       </div>
     );
+  }
+
+  componentDidMount() {
+    this.getWeather(DEFAULT_CITY);
   }
 
   getWeather = city => {

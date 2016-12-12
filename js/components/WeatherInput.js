@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class WeatherInput extends React.Component {
+export default class WeatherInput extends React.PureComponent {
   render() {
   	return (
       <div>
